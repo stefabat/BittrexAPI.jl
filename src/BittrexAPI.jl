@@ -36,13 +36,13 @@ struct Bittrex
 end
 
 # constructor for public API
-function Bittrex()
-    return Bittrex("","","v1.1")
+function Bittrex(version = "v1.1")
+    return Bittrex("","",version)
 end
 
 # constructor for private API
-function Bittrex(apikey, apisecret)
-    return Bittrex(apikey,apisecret,"v1.1")
+function Bittrex(apikey, apisecret, version = "v1.1")
+    return Bittrex(apikey,apisecret,version)
 end
 
 # Public API
