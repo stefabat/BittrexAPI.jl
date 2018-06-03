@@ -41,8 +41,8 @@ function Bittrex(version = "v1.1")
 end
 
 # constructor for private API
-function Bittrex(apikey, apisecret, version = "v1.1")
-    return Bittrex(apikey,apisecret,version)
+function Bittrex(apikey, apisecret)
+    return Bittrex(apikey,apisecret, "v1.1")
 end
 
 # Public API
